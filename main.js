@@ -5,6 +5,7 @@ var runner = document.getElementById("runner");
 var keywords = ["echo", ""]
 
 runner.addEventListener("mousedown", function() {
+    alert("sorta work");
     yourcode = editor.value().split();
     function findkeyword(keyword, value) {
         for (var i = 0; i < keywords.length; i++) {
