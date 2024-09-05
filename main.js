@@ -7,26 +7,15 @@ var keywords = ["echo", ""]
 runner.addEventListener("mousedown", function() {
     alert("sorta work");
     yourcode = editor.value().split();
-    function findkeyword(keyword, value) {
-        for (var i = 0; i < keywords.length; i++) {
-            keywordsplit = keyword.split();
-        }
-        var totaltest = 0
-        for (var movekeys = 0; movekeys < keyword.length; movekeys++) {
-            if (yourcode[value+movekeys] == keywordsplit[movekeys]) {
-                totaltest++;
+    alert(yourcode);
+    keywords = ["echo"];
+    for (var i = 0; i < keywords.length; i++) {
+        keywordused = keywords[i];
+        lengthof = keywordused.length;
+        for (var j = 0; j < lengthof; j++) {
+            if (yourcode[j] == keywordused[j]) {
+                f
             }
-        }
-        if (totaltest == keyword.length-1) {
-            return true
-        }
-        else {
-            return false
-        }
-    }
-    for (var char = 0; char < yourcode.length; char++) {
-        if (findkeyword("echo", char) == true) {
-            alert("Letsgooooooo")
         }
     }
 });
