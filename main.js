@@ -14,7 +14,7 @@ runner.addEventListener("mousedown", function() {
         lengthof = keywordused.length;
         for (var j = 0; j < lengthof; j++) {
             if (yourcode[j] == keywordused[j]) {
-                f
+                alert("good");
             }
         }
     }
